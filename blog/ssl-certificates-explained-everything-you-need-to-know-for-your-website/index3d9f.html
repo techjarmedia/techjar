@@ -1,0 +1,219 @@
+<!doctype html>
+<html amp lang="en">
+  
+<!-- Mirrored from www.intechnic.com/blog/ssl-certificates-explained-everything-you-need-to-know-for-your-website/?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2020 22:27:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>SSL Certificates Explained - Everything You Need to Know for Your Website</title>
+    <link rel="canonical" href="index.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Andrew Kucheriavy">
+
+    <meta name="description" content="If you’re confused about SSL certificates, you’re not alone. Here’s everything you need to know about SSL certificates for your website.">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "SSL Certificates Explained - Everything You Need to Know for Your Website",
+        "datePublished": "2017-02-28T16:00:17Z",
+        "dateModified": "2018-02-08T11:30:11.732Z",
+        "mainEntityOfPage": "https://www.intechnic.com/blog/ssl-certificates-explained-everything-you-need-to-know-for-your-website/",
+        "author": {
+          "@type": "Person",
+          "name": "Andrew Kucheriavy"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://cdn2.hubspot.net/hubfs/439788/Blog/Featured%20Images/SSL%20Certificates%20Explained%20%3F%20Everything%20You%20Need%20to%20Know%20for%20Your%20Website.jpg"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "Intechnic Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../blog.html">
+        
+          <span class="logo-header-text">The Intechnically Savvy Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="index.html">SSL Certificates Explained - Everything You Need to Know for Your Website</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../author/andrew-kucheriavy.html">Andrew Kucheriavy</a> | Feb 28, 2017 4:00:17 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p><amp-img src="../../hubfs/Imported_Blog_Media/SSL-Certificates-Explained-Everything-You-Need-to-Know-for-Your-Website-3.jpg" class="hidden-featured" width="601.0" height="393.0" layout="responsive"></amp-img>If you’re wondering, “What is an SSL certificate, and do I need one for my website?” you’re not alone. This is one of the most commonly asked questions our clients have when we’re setting up domains. To help you out, here’s everything you need to know about SSL certificates for your website.</p>
+
+<h2>What Is an SSL Certificate?</h2>
+<p>An SSL (Secure Socket Layer)&nbsp;certificate provides a method of encrypting data as it travels across the Internet to ensure the information cannot be intercepted for malicious purposes. You can tell if a website has an SSL certificate by looking at the address bar of your browser. If the website has an SSL certificate, the URL in your address bar will begin with HTTPS, not HTTP. That extra “s” stands for “secure.” Most browsers will also show a “Lock” icon indicating that the connection is encrypted. <amp-img class="aligncenter size-full wp-image-21329" src="../../hs-fs/hubfs/Imported_Blog_Media/An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-40def.png?width=1024&amp;height=512&amp;name=An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png" alt="An SSL certificate provides a method of encrypting data as it travels across the Internet to ensure the information cannot be intercepted for malicious purpose" width="1024" height="512" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png?width=512&amp;height=256&amp;name=An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png 512w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png?width=1024&amp;height=512&amp;name=An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png 1024w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png?width=1536&amp;height=768&amp;name=An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png 1536w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png?width=2048&amp;height=1024&amp;name=An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png 2048w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png?width=2560&amp;height=1280&amp;name=An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png 2560w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png?width=3072&amp;height=1536&amp;name=An-SSL-certificate-provides-a-method-of-encrypting-data-as-it-travels-across-the-Internet-to-ensure-the-information-cannot-be-intercepted-for-maliciou-4.png 3072w" layout="responsive"></amp-img></p>
+<h2>Do I Need an SSL Certificate?</h2>
+<p>You definitely need an SSL certificate if you have an e-commerce website or transmit any kind of sensitive information. More specifically, you should get an SSL certificate installed and connection encrypted if your website:</p>
+<ul>
+<li>Has user authentication (passwords and logins) to allow access to restricted information.</li>
+</ul>
+<ul>
+<li>Processes financial information (online orders, credit card numbers, bank accounts, etc.).</li>
+</ul>
+<ul>
+<li>Transfers or stores sensitive data: social security numbers, IDs, birth dates, license numbers, etc.</li>
+</ul>
+<ul>
+<li>Works with any kind of medical or legal information.</li>
+</ul>
+<ul>
+<li>Contains any kind of restricted proprietary or confidential information, legal documents, contracts, client lists, etc.</li>
+</ul>
+<h2><amp-img class="aligncenter size-full wp-image-21330" src="../../hs-fs/hubfs/Imported_Blog_Media/You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4309e.png?width=1024&amp;height=512&amp;name=You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png" alt="You definitely need an SSL  (Secure Socket Layer) certificate if you have an e-commerce website or transmit any kind of sensitive information" width="1024" height="512" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png?width=512&amp;height=256&amp;name=You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png 512w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png?width=1024&amp;height=512&amp;name=You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png 1024w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png?width=1536&amp;height=768&amp;name=You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png 1536w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png?width=2048&amp;height=1024&amp;name=You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png 2048w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png?width=2560&amp;height=1280&amp;name=You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png 2560w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png?width=3072&amp;height=1536&amp;name=You-definitely-need-an-SSL-Secure-Socket-Layer-certificate-if-you-have-an-e-commerce-website-or-transmit-any-kind-of-sensitive-information-4.png 3072w" layout="responsive"></amp-img></h2>
+<h2>Where Can I Get an SSL Certificate?</h2>
+<p>Your hosting provider should be able to assist you in obtaining an SSL certificate. First, you need to purchase the certificate from a trusted vendor. Your web developer or hosting provider can order it for you, or they can refer you to a source. Typically, there is an annual fee to obtain a certificate, and the SSL-issuing authority may have to verify your identity (or the identity of your business) before issuing the certificate. To learn more about hosting and domains, check out the free eBook below:  <amp-iframe width="300" height="100" layout="responsive" resizable sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation allow-forms" src="https://amp.hubspot.net/_hcms/cta?portalId=439788&amp;ctaGuid=f6e6589d-30e1-4fad-aa9a-4ae09c2c3926&amp;analyticsPageId=5268045230&amp;contentType=blog-post&amp;referrerUrl=https://www.intechnic.com/blog/ssl-certificates-explained-everything-you-need-to-know-for-your-website/?hs_amp%3Dtrue">
+  <amp-img layout="fixed" height="25" width="25" class="iframe-placeholder" src="../../hs/hsstatic/content_shared_assets/static-1.4092/img/iframe-expand.png" placeholder overflow></amp-img>
+</amp-iframe> </p>
+<button type="button"></button>
+<div class="popup-banner__subtitle">&nbsp;</div>
+<div> <amp-iframe width="300" height="100" layout="responsive" resizable sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation allow-forms" src="https://amp.hubspot.net/_hcms/cta?portalId=439788&amp;ctaGuid=0541917c-4013-40f1-a4db-b1e49c156347&amp;analyticsPageId=5268045230&amp;contentType=blog-post&amp;referrerUrl=https://www.intechnic.com/blog/ssl-certificates-explained-everything-you-need-to-know-for-your-website/?hs_amp%3Dtrue">
+  <amp-img layout="fixed" height="25" width="25" class="iframe-placeholder" src="../../hs/hsstatic/content_shared_assets/static-1.4092/img/iframe-expand.png" placeholder overflow></amp-img>
+</amp-iframe> </div>
+<amp-analytics type="googleanalytics"><script type="application/json">{
+  "vars": {
+    "account": "UA-6617892-1"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script></amp-analytics></span>
+        </div>
+        <div class="full-link">
+          <a href="index.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="https://track.hubspot.com/__ptq.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=SSL+Certificates+Explained+-+Everything+You+Need+to+Know+for+Your+Website&amp;pi=5268045230&amp;a=439788&amp;nc=true&amp;cgi=5182297981&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from www.intechnic.com/blog/ssl-certificates-explained-everything-you-need-to-know-for-your-website/?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2020 22:27:16 GMT -->
+</html>

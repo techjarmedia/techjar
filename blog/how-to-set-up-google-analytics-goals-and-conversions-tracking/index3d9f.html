@@ -1,0 +1,319 @@
+<!doctype html>
+<html amp lang="en">
+  
+<!-- Mirrored from www.intechnic.com/blog/how-to-set-up-google-analytics-goals-and-conversions-tracking/?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2020 22:27:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>How to Set Up Google Analytics Goals and Conversion Tracking</title>
+    <link rel="canonical" href="index.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="author" content="Andrew Kucheriavy">
+
+    <meta name="description" content="This article focuses on setting up and tracking conversions in Google Analytics and how the completion of an activity on your website can translate into business success.">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="generator" content="HubSpot">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How to Set Up Google Analytics Goals and Conversion Tracking",
+        "datePublished": "2016-02-23T15:00:15Z",
+        "dateModified": "2017-12-06T16:11:18.551Z",
+        "mainEntityOfPage": "https://www.intechnic.com/blog/how-to-set-up-google-analytics-goals-and-conversions-tracking/",
+        "author": {
+          "@type": "Person",
+          "name": "Andrew Kucheriavy"
+        },
+        "image": {
+         "@type": "ImageObject",
+        
+          
+          
+          "url": "https://cdn2.hubspot.net/hubfs/439788/Blog/Featured%20Images/How%20to%20Set%20Up%20Google%20Analytics%20Goals%20and%20Conversion%20Tracking.jpg"
+        
+        },
+        "publisher" : {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            
+            "url": "/hs/hsstatic/content_shared_assets/static-1.4092/img/default-amp-logo.png",
+            "width": 60,
+            "height": 60
+            
+          },
+          "name": "Intechnic Blog"
+        }
+      }
+    </script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript>
+      <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+    </noscript>
+  <style amp-custom>
+      body {
+        color: #404040;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .hs-page-width-normal {
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding: 0 5vw 5vw;
+      }
+
+      .info {
+        font-size: 14px
+      }
+
+      h1 {
+        color: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+
+      h1 a {
+        color: #404040;
+      }
+
+      h2 {
+        color: #404040;
+        font-size: 22px;
+        line-height: 38px;
+      }
+
+      a {
+        color: #416bb3;
+        text-decoration: none;
+      }
+
+      .logo-header-text {
+        color: #1e1e1e;
+        font-size: 36px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 2.0;
+        font-weight: bold;
+        vertical-align: text-bottom;
+      }
+
+      .hs-page-width-normal {
+        padding: 5vw;
+      }
+
+      .iframe-placeholder {
+        background-color: #bbb;
+      }
+
+      .header-banner {
+        padding: 3vw 1vw;
+        border-color: #dcdcdc;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        background-color: #ffffff;
+        color: #1e1e1e;
+        text-align: center;
+      }
+
+      .full-link {
+        text-align: center;
+      }
+
+      .full-link a {
+        border: 1px solid #dcdcdc;
+        background-color: transparent;
+        color: #416bb3;
+        cursor: pointer;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 auto;
+        max-width: 200px;
+        padding: 11px 16px;
+        text-decoration: none;
+        width: 50%;
+      }
+
+    </style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <div class="row-fluid">
+      <div class="header-banner">
+        <a class="blog-link" href="../../blog.html">
+        
+          <span class="logo-header-text">The Intechnically Savvy Blog</span>
+         </a>
+      </div>  
+      <div class="hs-page-width-normal">
+        <div class="post-header">
+          <h1><a href="index.html">How to Set Up Google Analytics Goals and Conversion Tracking</a></h1>
+        </div>
+        <div class="info">
+          <span> Written by <a class="author-link" href="../author/andrew-kucheriavy.html">Andrew Kucheriavy</a> | Feb 23, 2016 3:00:15 PM </span>
+        </div>
+        <div class="blog-section">
+          <span><p><amp-img src="../../hubfs/Imported_Blog_Media/featured_image-7.jpg" class="hidden-featured" width="598.0" height="278.0" layout="responsive"></amp-img><span>In the previous article, we talked about </span><a href="../how-to-use-google-analytics-best-metrics-reports/index.html" target="_blank">how to use Google Analytics metrics and basic reports</a><span> and some tips for&nbsp;</span>measuring website traffic acquisition and user behavior<span>.</span> This article focuses on setting up and tracking conversions or, in other words, the completion of an activity on your website that translates into business success. If we were to single out some of the most important metrics for measuring website’s success, this would be at the top of the list. In many cases, there is no better way to gauge your website’s effectiveness than measuring its conversions.</p>
+
+<p><a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15393" src="../../hs-fs/hubfs/Imported_Blog_Media/What-keeps-me-going-is-goals_-Muhammad-Ali-1-3ced7.jpg?width=1024&amp;height=512&amp;name=What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg" alt="What keeps me going is goals. - Muhammad Ali" width="1024" height="512" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg?width=512&amp;height=256&amp;name=What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg 512w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg?width=1024&amp;height=512&amp;name=What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg 1024w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg?width=1536&amp;height=768&amp;name=What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg 1536w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg?width=2048&amp;height=1024&amp;name=What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg 2048w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg?width=2560&amp;height=1280&amp;name=What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg 2560w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg?width=3072&amp;height=1536&amp;name=What-keeps-me-going-is-goals_-Muhammad-Ali-1-3.jpg 3072w" layout="responsive"></amp-img></a></p>
+<h2>The Importance of Measuring Goals</h2>
+<p>Conversion goals measure business outcomes. <em>Goals</em> in Google Analytics track the true effectiveness of your website’s performance. It shows whether or not the users of your website are doing what you want them to be doing and confirms that you are on track to reach your website's business objectives. <a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15274" src="../../hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-36407.png?width=761&amp;height=316&amp;name=Goal-Completions-3.png" alt="Goal Completions in Google Analytics" width="761" height="316" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-3.png?width=381&amp;height=158&amp;name=Goal-Completions-3.png 381w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-3.png?width=761&amp;height=316&amp;name=Goal-Completions-3.png 761w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-3.png?width=1142&amp;height=474&amp;name=Goal-Completions-3.png 1142w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-3.png?width=1522&amp;height=632&amp;name=Goal-Completions-3.png 1522w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-3.png?width=1903&amp;height=790&amp;name=Goal-Completions-3.png 1903w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-3.png?width=2283&amp;height=948&amp;name=Goal-Completions-3.png 2283w" layout="responsive"></amp-img></a> Without Goals in place, not only will you be unable to take full advantage of Google Analytics, you will not be able to measure your website’s level of performance. So let’s set them up!</p>
+<h2>Know What You Are Measuring and Why</h2>
+<p>Before you can measure goals, you first need to set them. I recommend using the SMART model for <a href="../how-to-set-smart-business-goals-for-a-business-website/index.html" target="_blank">setting website goals</a>. The "M" in SMART stands for "Measurable". This discipline ensures that you are on track toward achieving business objectives with your website. I also prepared <a href="../best-examples-of-website-goals-and-objectives/index.html" target="_blank">15 website goal examples</a> that will help you get started.</p>
+<p><amp-youtube width="480" height="270" data-videoid="fMeKXsl7xT8" layout="responsive"></amp-youtube></p>
+<h2>Setting Up Goal Tracking with Google Analytics</h2>
+<p>The first step in goal tracking is to determine the action that defines a "conversion" on your website. Google Analytics uses <em>Goals</em> to track those conversions. When a Goal&nbsp;is complete (the action), a conversion is logged. The conversion must align with the action you want website visitors to take to bring them closer to achieving your website’s SMART goal. A conversion may be a purchase, an information request, subscription, an online registration or any other desired action taken by a user. &nbsp;</p>
+<h3>Common Goal Examples to Track</h3>
+<table>
+<tbody>
+<tr>
+<td width="25%">
+<p><strong>User Acquisition Goal</strong></p>
+</td>
+<td width="25%">
+<p><strong>Revenue Goal</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>User Registration (Create Account)</li>
+</ul>
+<ul>
+<li>Subscription</li>
+</ul>
+<ul>
+<li>Mailing List Sign Up</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Place an Order (E-commerce)</li>
+</ul>
+<ul>
+<li>Payment / Transaction</li>
+</ul>
+<ul>
+<li>Donation (Non-profit)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td width="25%">
+<p><strong>Inquiry Goal</strong></p>
+</td>
+<td width="25%">
+<p><strong>Engagement (desired action)</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>Information Request</li>
+</ul>
+<ul>
+<li>Contact Form Submission</li>
+</ul>
+<ul>
+<li>Live Chat</li>
+</ul>
+<ul>
+<li>Catalog Download</li>
+</ul>
+<ul>
+<li>Demo Request</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Media Play (Video)</li>
+</ul>
+<ul>
+<li>Content Offer Download</li>
+</ul>
+<ul>
+<li>Submit Review /Rating</li>
+</ul>
+<ul>
+<li>Submit Comment</li>
+</ul>
+<ul>
+<li>Compare Information</li>
+</ul>
+<ul>
+<li>Share / Social</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Determine Your Destination Page</h3>
+<p>The method Google Analytics employs to measure goals is primarily through <em>destination</em> pages. A destination page is where a user lands upon completing a certain task. For example, if a user ends up on a “Thank you for Contacting Us or Requesting Information” page, Google Analytics knows that the user submitted a Contact Us form or a Request Information form. Similarly, if a user ends up on the "Thank you for your order!" page, this tells Google Analytics that the user ordered a product or service; as this is the only way the user would arrive on that page. To determine if your website has a destination page, check if your page URL changes after an action is completed. <a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15400" src="../../hs-fs/hubfs/Imported_Blog_Media/goals-thank-you-page-36c3d.png?width=735&amp;height=350&amp;name=goals-thank-you-page-3.png" alt="Goals Thank You Page" width="735" height="350" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/goals-thank-you-page-3.png?width=368&amp;height=175&amp;name=goals-thank-you-page-3.png 368w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/goals-thank-you-page-3.png?width=735&amp;height=350&amp;name=goals-thank-you-page-3.png 735w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/goals-thank-you-page-3.png?width=1103&amp;height=525&amp;name=goals-thank-you-page-3.png 1103w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/goals-thank-you-page-3.png?width=1470&amp;height=700&amp;name=goals-thank-you-page-3.png 1470w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/goals-thank-you-page-3.png?width=1838&amp;height=875&amp;name=goals-thank-you-page-3.png 1838w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/goals-thank-you-page-3.png?width=2205&amp;height=1050&amp;name=goals-thank-you-page-3.png 2205w" layout="responsive"></amp-img></a> You can then set up Goal Tracking in Google Analytics by following these steps:</p>
+<h3>Create a New Goal</h3>
+<p>1. Sign in to Google Analytics. 2. Go to the <strong>Admin</strong> tab and switch to the desired <strong><strong>Account, Property and View.</strong></strong></p>
+<p><a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15294" src="../../hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-Admin-Bar-3be95.png?width=720&amp;height=66&amp;name=Google-Analytics-Admin-Bar-3.png" alt="Google Analytics Admin Bar" width="720" height="66" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-Admin-Bar-3.png?width=360&amp;height=33&amp;name=Google-Analytics-Admin-Bar-3.png 360w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-Admin-Bar-3.png?width=720&amp;height=66&amp;name=Google-Analytics-Admin-Bar-3.png 720w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-Admin-Bar-3.png?width=1080&amp;height=99&amp;name=Google-Analytics-Admin-Bar-3.png 1080w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-Admin-Bar-3.png?width=1440&amp;height=132&amp;name=Google-Analytics-Admin-Bar-3.png 1440w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-Admin-Bar-3.png?width=1800&amp;height=165&amp;name=Google-Analytics-Admin-Bar-3.png 1800w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-Admin-Bar-3.png?width=2160&amp;height=198&amp;name=Google-Analytics-Admin-Bar-3.png 2160w" layout="responsive"></amp-img></a></p>
+<p>3. In the View column, click <strong>Goals</strong>.</p>
+<p><a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15311" src="../../hs-fs/hubfs/Imported_Blog_Media/How-to-Set-up-Goals-300ae.png?width=833&amp;height=282&amp;name=How-to-Set-up-Goals-3.png" alt="How to Set up Goals" width="833" height="282" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/How-to-Set-up-Goals-3.png?width=417&amp;height=141&amp;name=How-to-Set-up-Goals-3.png 417w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/How-to-Set-up-Goals-3.png?width=833&amp;height=282&amp;name=How-to-Set-up-Goals-3.png 833w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/How-to-Set-up-Goals-3.png?width=1250&amp;height=423&amp;name=How-to-Set-up-Goals-3.png 1250w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/How-to-Set-up-Goals-3.png?width=1666&amp;height=564&amp;name=How-to-Set-up-Goals-3.png 1666w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/How-to-Set-up-Goals-3.png?width=2083&amp;height=705&amp;name=How-to-Set-up-Goals-3.png 2083w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/How-to-Set-up-Goals-3.png?width=2499&amp;height=846&amp;name=How-to-Set-up-Goals-3.png 2499w" layout="responsive"></amp-img></a></p>
+<p>4. Click <strong>+New Goal</strong>.</p>
+<p><a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15295" src="../../hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-New-Goal-34092.png?width=616&amp;height=53&amp;name=Google-Analytics-New-Goal-3.png" alt="Google Analytics New Goal" width="616" height="53" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-New-Goal-3.png?width=308&amp;height=27&amp;name=Google-Analytics-New-Goal-3.png 308w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-New-Goal-3.png?width=616&amp;height=53&amp;name=Google-Analytics-New-Goal-3.png 616w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-New-Goal-3.png?width=924&amp;height=80&amp;name=Google-Analytics-New-Goal-3.png 924w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-New-Goal-3.png?width=1232&amp;height=106&amp;name=Google-Analytics-New-Goal-3.png 1232w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-New-Goal-3.png?width=1540&amp;height=133&amp;name=Google-Analytics-New-Goal-3.png 1540w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Google-Analytics-New-Goal-3.png?width=1848&amp;height=159&amp;name=Google-Analytics-New-Goal-3.png 1848w" layout="responsive"></amp-img></a></p>
+<p>5. Select a template that meets your business objectives.</p>
+<p><a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15283" src="../../hs-fs/hubfs/Imported_Blog_Media/Goal-Setup-3149f.png?width=668&amp;height=561&amp;name=Goal-Setup-3.png" alt="Goal Setup" width="668" height="561" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Setup-3.png?width=334&amp;height=281&amp;name=Goal-Setup-3.png 334w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Setup-3.png?width=668&amp;height=561&amp;name=Goal-Setup-3.png 668w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Setup-3.png?width=1002&amp;height=842&amp;name=Goal-Setup-3.png 1002w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Setup-3.png?width=1336&amp;height=1122&amp;name=Goal-Setup-3.png 1336w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Setup-3.png?width=1670&amp;height=1403&amp;name=Goal-Setup-3.png 1670w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Setup-3.png?width=2004&amp;height=1683&amp;name=Goal-Setup-3.png 2004w" layout="responsive"></amp-img></a> Note that Goal templates are tailored to meet common needs of businesses within specific industries so if you haven't selected an industry, you may not see all templates.</p>
+<p>6. Click on <strong>Continue</strong>, and Name your Goal.</p>
+<p>7. Specify how you want to track your goals. In most cases this will be the destination page&nbsp;we discussed above.</p>
+<div><a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15308" src="../../hs-fs/hubfs/Imported_Blog_Media/Goal-Description-3e994.png?width=679&amp;height=310&amp;name=Goal-Description-3.png" alt="Goal Description" width="679" height="310" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Description-3.png?width=340&amp;height=155&amp;name=Goal-Description-3.png 340w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Description-3.png?width=679&amp;height=310&amp;name=Goal-Description-3.png 679w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Description-3.png?width=1019&amp;height=465&amp;name=Goal-Description-3.png 1019w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Description-3.png?width=1358&amp;height=620&amp;name=Goal-Description-3.png 1358w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Description-3.png?width=1698&amp;height=775&amp;name=Goal-Description-3.png 1698w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Description-3.png?width=2037&amp;height=930&amp;name=Goal-Description-3.png 2037w" layout="responsive"></amp-img></a></div>
+<p>Click on <strong>Continue</strong>, and specify the URL of your destination page.</p>
+<p><a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15284" src="../../hs-fs/hubfs/Imported_Blog_Media/Goal-Details-Destination-36a98.png?width=706&amp;height=125&amp;name=Goal-Details-Destination-3.png" alt="Goal Details - Destination" width="706" height="125" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Details-Destination-3.png?width=353&amp;height=63&amp;name=Goal-Details-Destination-3.png 353w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Details-Destination-3.png?width=706&amp;height=125&amp;name=Goal-Details-Destination-3.png 706w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Details-Destination-3.png?width=1059&amp;height=188&amp;name=Goal-Details-Destination-3.png 1059w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Details-Destination-3.png?width=1412&amp;height=250&amp;name=Goal-Details-Destination-3.png 1412w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Details-Destination-3.png?width=1765&amp;height=313&amp;name=Goal-Details-Destination-3.png 1765w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Details-Destination-3.png?width=2118&amp;height=375&amp;name=Goal-Details-Destination-3.png 2118w" layout="responsive"></amp-img></a></p>
+<h3>Tracking Goals with Events</h3>
+<p>If your website does not have destination pages for the actions you wish to track (for example, “Thank you” messages appear on the same page or in overlay windows) and you remain on the same URL after completing the action, then you will need to track using <em>Events</em>. This is a little more advanced so you may want to request that your web developer assists <a href="https://support.google.com/analytics/answer/1033068" target="_blank">in setting up Event tracking that can be used to track goals</a>.</p>
+<h2>Measuring Website Conversions&nbsp;with Google Analytics</h2>
+<p>Once your Goals are set, Google Analytics will start recording data each time a Goal conversion happens. Note that Analytics will show conversions only from the moment you set up Goals tracking, not before. Once data is received, you will see a number of Goals reports. Let's look at some basic conversion KPIs you will see across Google Analytics reports. For more detailed information, please download my free eGuide on <a href="http://resources.intechnic.com/conversions" target="_blank">Conversions Tracking with Google Analytics</a>. <a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15405" src="../../hs-fs/hubfs/Imported_Blog_Media/Average-landing-page-conversion-rate-39924.jpg?width=1024&amp;height=512&amp;name=Average-landing-page-conversion-rate-3.jpg" alt="Average landing page conversion rate" width="1024" height="512" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Average-landing-page-conversion-rate-3.jpg?width=512&amp;height=256&amp;name=Average-landing-page-conversion-rate-3.jpg 512w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Average-landing-page-conversion-rate-3.jpg?width=1024&amp;height=512&amp;name=Average-landing-page-conversion-rate-3.jpg 1024w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Average-landing-page-conversion-rate-3.jpg?width=1536&amp;height=768&amp;name=Average-landing-page-conversion-rate-3.jpg 1536w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Average-landing-page-conversion-rate-3.jpg?width=2048&amp;height=1024&amp;name=Average-landing-page-conversion-rate-3.jpg 2048w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Average-landing-page-conversion-rate-3.jpg?width=2560&amp;height=1280&amp;name=Average-landing-page-conversion-rate-3.jpg 2560w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Average-landing-page-conversion-rate-3.jpg?width=3072&amp;height=1536&amp;name=Average-landing-page-conversion-rate-3.jpg 3072w" layout="responsive"></amp-img></a></p>
+<h3><a name="Goal_Conversion_Rate"></a>Goal Conversion Rate</h3>
+<p>Goal Conversion Rate shows the percentage of visits that resulted in a conversion as defined by the Goal. If we were to single out one KPI (Key Performance Indicator) for measuring the effectiveness of your website, this would be it. In many cases, there is no better indicator to gauge your website’s effectiveness than its conversion rate. All steps taken from this point on should be focused on maximizing this conversion rate. <a href="https://cdn2.hubspot.net/hubfs/439788/Imported_Blog_Media/Goal-Conversion-Rate_e-3.png"><amp-img class="aligncenter size-full wp-image-15421" src="../../hs-fs/hubfs/Imported_Blog_Media/Goal-Conversion-Rate_e-3b013.png?width=767&amp;height=293&amp;name=Goal-Conversion-Rate_e-3.png" alt="" width="767" height="293" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Conversion-Rate_e-3.png?width=384&amp;height=147&amp;name=Goal-Conversion-Rate_e-3.png 384w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Conversion-Rate_e-3.png?width=767&amp;height=293&amp;name=Goal-Conversion-Rate_e-3.png 767w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Conversion-Rate_e-3.png?width=1151&amp;height=440&amp;name=Goal-Conversion-Rate_e-3.png 1151w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Conversion-Rate_e-3.png?width=1534&amp;height=586&amp;name=Goal-Conversion-Rate_e-3.png 1534w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Conversion-Rate_e-3.png?width=1918&amp;height=733&amp;name=Goal-Conversion-Rate_e-3.png 1918w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Conversion-Rate_e-3.png?width=2301&amp;height=879&amp;name=Goal-Conversion-Rate_e-3.png 2301w" layout="responsive"></amp-img></a> Simply put, if the conversion rate is high, and you're bringing in more quality traffic, you will reach your business objectives faster. On the other hand, if the conversion rate is low, it doesn't matter how much traffic you’re bringing in – your website is ineffectively engaging visitors which means you are wasting time and money. You want this number to be high and increase over time, as a result of ongoing website improvements and marketing efforts. <a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15390" src="../../hs-fs/hubfs/Imported_Blog_Media/Conversion-Rate-vs_-Number-of-Conversions-3de1a.jpg?width=1024&amp;height=512&amp;name=Conversion-Rate-vs_-Number-of-Conversions-3.jpg" alt="Conversion Rate vs. Number of Conversions" width="1024" height="512" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Conversion-Rate-vs_-Number-of-Conversions-3.jpg?width=512&amp;height=256&amp;name=Conversion-Rate-vs_-Number-of-Conversions-3.jpg 512w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Conversion-Rate-vs_-Number-of-Conversions-3.jpg?width=1024&amp;height=512&amp;name=Conversion-Rate-vs_-Number-of-Conversions-3.jpg 1024w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Conversion-Rate-vs_-Number-of-Conversions-3.jpg?width=1536&amp;height=768&amp;name=Conversion-Rate-vs_-Number-of-Conversions-3.jpg 1536w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Conversion-Rate-vs_-Number-of-Conversions-3.jpg?width=2048&amp;height=1024&amp;name=Conversion-Rate-vs_-Number-of-Conversions-3.jpg 2048w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Conversion-Rate-vs_-Number-of-Conversions-3.jpg?width=2560&amp;height=1280&amp;name=Conversion-Rate-vs_-Number-of-Conversions-3.jpg 2560w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Conversion-Rate-vs_-Number-of-Conversions-3.jpg?width=3072&amp;height=1536&amp;name=Conversion-Rate-vs_-Number-of-Conversions-3.jpg 3072w" layout="responsive"></amp-img></a></p>
+<h3>Goal Completions</h3>
+<p>Goal Completions shows the total number of conversions. Where the <em>conversion rate</em> measures effectiveness, the <em>number of conversions</em> measures the impact on your business. As quality traffic to the website grows, a healthy conversion rate should translate to results in sales, leads, subscriptions, registrations or any other action you consider to be a conversion. <a href="https://cdn2.hubspot.net/hubfs/439788/Imported_Blog_Media/Goal-Completions-Graph_e-3.png"><amp-img class="aligncenter size-full wp-image-15420" src="../../hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-Graph_e-3a146.png?width=767&amp;height=293&amp;name=Goal-Completions-Graph_e-3.png" alt="" width="767" height="293" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-Graph_e-3.png?width=384&amp;height=147&amp;name=Goal-Completions-Graph_e-3.png 384w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-Graph_e-3.png?width=767&amp;height=293&amp;name=Goal-Completions-Graph_e-3.png 767w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-Graph_e-3.png?width=1151&amp;height=440&amp;name=Goal-Completions-Graph_e-3.png 1151w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-Graph_e-3.png?width=1534&amp;height=586&amp;name=Goal-Completions-Graph_e-3.png 1534w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-Graph_e-3.png?width=1918&amp;height=733&amp;name=Goal-Completions-Graph_e-3.png 1918w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completions-Graph_e-3.png?width=2301&amp;height=879&amp;name=Goal-Completions-Graph_e-3.png 2301w" layout="responsive"></amp-img></a> Other examples of conversion indicators for your website could be liking or sharing a post on social media or viewing an embedded video. This measures the action and not the loading of a specific page. Goals in Google Analytics can also be used to track: visit duration (i.e., at least 10 minutes of interaction), number of pages per visit (reading at least five articles) or events (videos, plays or social recommendations). Google Analytics allows the setup of up to 20 goals, so you can assign goals to anything on your website with a measurable impact.</p>
+<h3>Goal Value</h3>
+<p>Goal Value shows the monetary value of conversions. If Goal Completion measures the <em>quantity</em>, Goal Value measures the <em>quality</em>. You can assign Goals a monetary value, so you can actually see the worth of each conversion to your business (i.e., you can see your total sales numbers). Because this setup includes additional programming, you may want to ask your website developer to pass order information to Google Analytics so it can capture the exact value of each order. You can also track actions like average order values, total amounts sold, purchasing trends, most popular categories or top selling items. <a href="https://cdn2.hubspot.net/hubfs/439788/Imported_Blog_Media/Goal-Value_e-3.png"><amp-img class="aligncenter size-full wp-image-15419" src="../../hs-fs/hubfs/Imported_Blog_Media/Goal-Value_e-3a699.png?width=767&amp;height=293&amp;name=Goal-Value_e-3.png" alt="" width="767" height="293" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Value_e-3.png?width=384&amp;height=147&amp;name=Goal-Value_e-3.png 384w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Value_e-3.png?width=767&amp;height=293&amp;name=Goal-Value_e-3.png 767w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Value_e-3.png?width=1151&amp;height=440&amp;name=Goal-Value_e-3.png 1151w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Value_e-3.png?width=1534&amp;height=586&amp;name=Goal-Value_e-3.png 1534w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Value_e-3.png?width=1918&amp;height=733&amp;name=Goal-Value_e-3.png 1918w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Value_e-3.png?width=2301&amp;height=879&amp;name=Goal-Value_e-3.png 2301w" layout="responsive"></amp-img></a> You can also assign arbitrary numbers to goals ($1 for subscribing to a mailing list and $5 for completing a Contact Us form). By giving each goal a dollar value, you can prioritize. For example, if you believe that leads that originate from LinkedIn are twice as valuable as those from Facebook, set the dollar amounts accordingly. <a href="http://resources.intechnic.com/conversions" target="_blank"><amp-img class="aligncenter size-full wp-image-15392" src="../../hs-fs/hubfs/Imported_Blog_Media/Goal-Completion-Rate-vs_-Goal-Value-3dfa9.jpg?width=1024&amp;height=512&amp;name=Goal-Completion-Rate-vs_-Goal-Value-3.jpg" alt="Goal Completion Rate vs. Goal Value" width="1024" height="512" srcset="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completion-Rate-vs_-Goal-Value-3.jpg?width=512&amp;height=256&amp;name=Goal-Completion-Rate-vs_-Goal-Value-3.jpg 512w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completion-Rate-vs_-Goal-Value-3.jpg?width=1024&amp;height=512&amp;name=Goal-Completion-Rate-vs_-Goal-Value-3.jpg 1024w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completion-Rate-vs_-Goal-Value-3.jpg?width=1536&amp;height=768&amp;name=Goal-Completion-Rate-vs_-Goal-Value-3.jpg 1536w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completion-Rate-vs_-Goal-Value-3.jpg?width=2048&amp;height=1024&amp;name=Goal-Completion-Rate-vs_-Goal-Value-3.jpg 2048w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completion-Rate-vs_-Goal-Value-3.jpg?width=2560&amp;height=1280&amp;name=Goal-Completion-Rate-vs_-Goal-Value-3.jpg 2560w, https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/Goal-Completion-Rate-vs_-Goal-Value-3.jpg?width=3072&amp;height=1536&amp;name=Goal-Completion-Rate-vs_-Goal-Value-3.jpg 3072w" layout="responsive"></amp-img></a></p>
+<h2>E-Commerce Goals Tracking</h2>
+<p>If you sell products or services directly on your website, it is imperative that you set up e-commerce tracking. It is a more advanced setup so you might need to request help from your web developer or IT department to set it up: <a href="https://support.google.com/analytics/answer/1009612?hl=en" target="_blank">setting up e-commerce tracking with Google Analytics</a>. E-commerce&nbsp;tracking will let Analytics collect and measure transactional data like product performance, purchase amounts, billing locations and more. These reports will give you an understanding of how your business is doing as well as give you a measure on the return of your marketing dollars.  <amp-iframe width="300" height="100" layout="responsive" resizable sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation allow-forms" src="https://amp.hubspot.net/_hcms/cta?portalId=439788&amp;ctaGuid=783f4e8b-9aee-478e-904b-25001b9806db&amp;analyticsPageId=5268044050&amp;contentType=blog-post&amp;referrerUrl=https://www.intechnic.com/blog/how-to-set-up-google-analytics-goals-and-conversions-tracking/?hs_amp%3Dtrue">
+  <amp-img layout="fixed" height="25" width="25" class="iframe-placeholder" src="../../hs/hsstatic/content_shared_assets/static-1.4092/img/iframe-expand.png" placeholder overflow></amp-img>
+</amp-iframe> </p>
+<h2>Other Goals Reports</h2>
+<p>Google Analytics comes with a number of other Goals-related reports: Goal URLs, Reverse Goal Path, Funnel Visualization, Goal Flow and more. For more information on these reports, please download my free eGuide on <a href="http://resources.intechnic.com/conversions" target="_blank">Conversions Tracking with Google Analytics</a>.</p>
+<button type="button"></button>
+<div class="popup-banner__subtitle">Free Download</div>
+<div> <amp-iframe width="300" height="100" layout="responsive" resizable sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation allow-forms" src="https://amp.hubspot.net/_hcms/cta?portalId=439788&amp;ctaGuid=3e8ed845-f51f-44bc-a3d1-f41fffb9c690&amp;analyticsPageId=5268044050&amp;contentType=blog-post&amp;referrerUrl=https://www.intechnic.com/blog/how-to-set-up-google-analytics-goals-and-conversions-tracking/?hs_amp%3Dtrue">
+  <amp-img layout="fixed" height="25" width="25" class="iframe-placeholder" src="../../hs/hsstatic/content_shared_assets/static-1.4092/img/iframe-expand.png" placeholder overflow></amp-img>
+</amp-iframe> </div>
+<amp-analytics type="googleanalytics"><script type="application/json">{
+  "vars": {
+    "account": "UA-6617892-1"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script></amp-analytics></span>
+        </div>
+        <div class="full-link">
+          <a href="index.html">View full post</a>
+        </div>
+      </div>
+    </div>
+    
+    <amp-pixel src="https://track.hubspot.com/__ptq.gif?cd=SCREEN_COLOR_DEPTH-bit&amp;cs=DOCUMENT_CHARSET&amp;ln=BROWSER_LANGUAGE&amp;sd=AVAILABLE_SCREEN_WIDTHxAVAILABLE_SCREEN_HEIGHT&amp;v=1.1&amp;iaa=1&amp;k=1&amp;ccu=CANONICAL_URL&amp;r=DOCUMENT_REFERRER&amp;ct=blog-post&amp;t=How+to+Set+Up+Google+Analytics+Goals+and+Conversion+Tracking&amp;pi=5268044050&amp;a=439788&amp;nc=true&amp;cgi=5182297981&amp;vi=CLIENT_ID(hubspotutk)&amp;ai=CLIENT_ID(amputk)">
+    </amp-pixel>
+    
+  </body>
+
+<!-- Mirrored from www.intechnic.com/blog/how-to-set-up-google-analytics-goals-and-conversions-tracking/?hs_amp=true by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2020 22:27:17 GMT -->
+</html>
